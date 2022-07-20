@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="ilg.gnumcueclipse.debug.gdbjtag.openocd.launchConfigurationType">
+<booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.openocd.doContinue" value="true"/>
+<booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.openocd.doDebugInRam" value="true"/>
+<booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.openocd.doFirstReset" value="false"/>
+<booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.openocd.doGdbServerAllocateConsole" value="true"/>
+<booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.openocd.doGdbServerAllocateTelnetConsole" value="false"/>
+<booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.openocd.doSecondReset" value="false"/>
+<booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.openocd.doStartGdbCLient" value="true"/>
+<booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.openocd.doStartGdbServer" value="true"/>
+<booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.openocd.enableSemihosting" value="false"/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.openocd.firstResetType" value="init"/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.openocd.gdbClientOtherCommands" value="set mem inaccessible-by-default off&#13;&#10;set arch riscv:rv32&#13;&#10;set remotetimeout 250"/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.openocd.gdbClientOtherOptions" value=""/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.openocd.gdbServerConnectionAddress" value=""/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.openocd.gdbServerExecutable" value="${openocd_path}/${openocd_executable}"/>
+<intAttribute key="ilg.gnumcueclipse.debug.gdbjtag.openocd.gdbServerGdbPortNumber" value="3333"/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.openocd.gdbServerLog" value=""/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.openocd.gdbServerOther" value="-f &quot;../../../../utils/openocd_dap.cfg&quot;"/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.openocd.gdbServerTclPortNumber" value="6666"/>
+<intAttribute key="ilg.gnumcueclipse.debug.gdbjtag.openocd.gdbServerTelnetPortNumber" value="4444"/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.openocd.otherInitCommands" value="monitor halt&#13;&#10;monitor mww 0x1ff00000 0x30047073&#13;&#10;monitor mww 0x1ff00004 0xa001&#13;&#10;monitor mww 0xec001000 0x0&#13;&#10;monitor mww 0xec001004 0x0&#13;&#10;monitor mww 0xec001008 0x0&#13;&#10;monitor mww 0xec00100c 0x0&#13;&#10;monitor mww 0xec001010 0x0&#13;&#10;monitor mww 0xec001014 0x0&#13;&#10;monitor mww 0xec001018 0x0&#13;&#10;monitor mww 0xec00101c 0x0&#13;&#10;monitor mww 0xec001020 0x0&#13;&#10;monitor mww 0xec001024 0x0&#13;&#10;monitor mww 0xec001028 0x0&#13;&#10;monitor mww 0xec00102c 0x0&#13;&#10;monitor mww 0xec001030 0x0&#13;&#10;monitor mww 0xec001034 0x0&#13;&#10;monitor mww 0xec001038 0x0&#13;&#10;monitor mww 0xec00103c 0x0&#13;&#10;monitor mww 0xec001040 0x0&#13;&#10;monitor mww 0xec001044 0x0&#13;&#10;monitor mww 0xec001048 0x0&#13;&#10;monitor mww 0xec00104c 0x0&#13;&#10;monitor mww 0xec001050 0x0&#13;&#10;monitor mww 0xec001054 0x0&#13;&#10;monitor mww 0xec001058 0x0&#13;&#10;monitor mww 0xec00105c 0x0&#13;&#10;monitor mww 0xec001060 0x0&#13;&#10;monitor mww 0xec001064 0x0&#13;&#10;monitor mww 0xec001068 0x0&#13;&#10;monitor mww 0xec00106c 0x0&#13;&#10;monitor mww 0xec001070 0x0&#13;&#10;monitor mww 0xec001074 0x0&#13;&#10;monitor mww 0xec001078 0x0&#13;&#10;monitor mww 0xec00107c 0x0&#13;&#10;monitor mww 0xec001080 0x0&#13;&#10;monitor mww 0xec001084 0x0&#13;&#10;monitor mww 0xec001088 0x0&#13;&#10;monitor mww 0xec00108c 0x0&#13;&#10;monitor mww 0xec001090 0x0&#13;&#10;monitor mww 0xec001094 0x0&#13;&#10;monitor mww 0xec001098 0x0&#13;&#10;monitor mww 0xec00109c 0x0&#13;&#10;monitor mww 0xec0010a0 0x0&#13;&#10;monitor mww 0xec0010a4 0x0&#13;&#10;monitor mww 0xec0010a8 0x0&#13;&#10;monitor mww 0xec0010ac 0x0&#13;&#10;monitor mww 0xec0010b0 0x0&#13;&#10;monitor mww 0xec0010b4 0x0&#13;&#10;monitor mww 0xec0010b8 0x0&#13;&#10;monitor mww 0xec0010bc 0x0&#13;&#10;monitor reg pc 0x1ff00000&#13;&#10;monitor reset&#13;&#10;monitor halt"/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.openocd.otherRunCommands" value=""/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.openocd.secondResetType" value="halt"/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.svdPath" value=""/>
+<stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.imageFileName" value=""/>
+<stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.imageOffset" value=""/>
+<stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.ipAddress" value="localhost"/>
+<stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.jtagDevice" value="GNU MCU OpenOCD"/>
+<booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.loadImage" value="true"/>
+<booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.loadSymbols" value="true"/>
+<stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.pcRegister" value=""/>
+<intAttribute key="org.eclipse.cdt.debug.gdbjtag.core.portNumber" value="3333"/>
+<booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.setPcRegister" value="false"/>
+<booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.setResume" value="false"/>
+<booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.setStopAt" value="true"/>
+<stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.stopAt" value="main"/>
+<stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.symbolsFileName" value=""/>
+<stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.symbolsOffset" value=""/>
+<booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.useFileForImage" value="false"/>
+<booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.useFileForSymbols" value="false"/>
+<booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.useProjBinaryForImage" value="true"/>
+<booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.useProjBinaryForSymbols" value="true"/>
+<booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.useRemoteTarget" value="true"/>
+<stringAttribute key="org.eclipse.cdt.dsf.gdb.DEBUG_NAME" value="${cross_prefix}gdb${cross_suffix}"/>
+<booleanAttribute key="org.eclipse.cdt.dsf.gdb.UPDATE_THREADLIST_ON_SUSPEND" value="false"/>
+<intAttribute key="org.eclipse.cdt.launch.ATTR_BUILD_BEFORE_LAUNCH_ATTR" value="2"/>
+<stringAttribute key="org.eclipse.cdt.launch.COREFILE_PATH" value=""/>
+<stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="pr_output\sample_1122.elf"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="sample_1122"/>
+<booleanAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_AUTO_ATTR" value="false"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value=""/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/sample_1122"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.dsf.launch.MEMORY_BLOCKS" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;memoryBlockExpressionList context=&quot;Context string&quot;&gt;&#13;&#10;&lt;memoryBlockExpression address=&quot;536061688&quot; label=&quot;0x1ff3a6f8&quot;/&gt;&#13;&#10;&lt;memoryBlockExpression address=&quot;1074028544&quot; label=&quot;0x40046000&quot;/&gt;&#13;&#10;&lt;memoryBlockExpression address=&quot;535994376&quot; label=&quot;0x1ff2a008&quot;/&gt;&#13;&#10;&lt;memoryBlockExpression address=&quot;536061700&quot; label=&quot;0x1ff3a704&quot;/&gt;&#13;&#10;&lt;memoryBlockExpression address=&quot;0&quot; label=&quot;0x0&quot;/&gt;&#13;&#10;&lt;memoryBlockExpression address=&quot;1073807760&quot; label=&quot;0x40010190&quot;/&gt;&#13;&#10;&lt;memoryBlockExpression address=&quot;1073979392&quot; label=&quot;0x4003a000&quot;/&gt;&#13;&#10;&lt;memoryBlockExpression address=&quot;1074040832&quot; label=&quot;0x40049000&quot;/&gt;&#13;&#10;&lt;memoryBlockExpression address=&quot;1074044928&quot; label=&quot;0x4004a000&quot;/&gt;&#13;&#10;&lt;memoryBlockExpression address=&quot;1073807572&quot; label=&quot;0x400100D4&quot;/&gt;&#13;&#10;&lt;memoryBlockExpression address=&quot;3959427072&quot; label=&quot;0xec001000&quot;/&gt;&#13;&#10;&lt;memoryBlockExpression address=&quot;3959422976&quot; label=&quot;0xec000000&quot;/&gt;&#13;&#10;&lt;memoryBlockExpression address=&quot;535975056&quot; label=&quot;0x1ff25490&quot;/&gt;&#13;&#10;&lt;memoryBlockExpression address=&quot;535975312&quot; label=&quot;0x1ff25590&quot;/&gt;&#13;&#10;&lt;memoryBlockExpression address=&quot;1073819648&quot; label=&quot;0x40013000&quot;/&gt;&#13;&#10;&lt;memoryBlockExpression address=&quot;536059688&quot; label=&quot;0x1ff39f28&quot;/&gt;&#13;&#10;&lt;memoryBlockExpression address=&quot;536059944&quot; label=&quot;0x1ff3a028&quot;/&gt;&#13;&#10;&lt;memoryBlockExpression address=&quot;3791650816&quot; label=&quot;0xe2000000&quot;/&gt;&#13;&#10;&lt;/memoryBlockExpressionList&gt;&#13;&#10;"/>
+<stringAttribute key="process_factory_id" value="org.eclipse.cdt.dsf.gdb.GdbProcessFactory"/>
+<stringAttribute key="saved_expressions&lt;seperator&gt;Unknown" value="0x40015300,0x40010000,0x1ff3e008,0x1ff49ec8,0x1ff3d220,0x1ff6763a,0x1ff16cd6,0x1ff0025c,0x1ff00250,0x1ff00000,0x40013000,0xec000000,0x1ff00110,0x1ff00ad0,0xe2000000"/>
+</launchConfiguration>

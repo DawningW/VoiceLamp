@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="ilg.gnumcueclipse.debug.gdbjtag.jlink.launchConfigurationType">
+<stringAttribute key="bad_container_name" value="\sample_1122_jlink"/>
+<booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.doConnectToRunning" value="false"/>
+<booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.doContinue" value="true"/>
+<booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.doDebugInRam" value="true"/>
+<booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.doFirstReset" value="false"/>
+<booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.doGdbServerAllocateConsole" value="true"/>
+<booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.doGdbServerAllocateSemihostingConsole" value="false"/>
+<booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.doGdbServerInitRegs" value="false"/>
+<booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.doGdbServerLocalOnly" value="false"/>
+<booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.doGdbServerSilent" value="false"/>
+<booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.doGdbServerVerifyDownload" value="false"/>
+<booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.doSecondReset" value="false"/>
+<booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.doStartGdbServer" value="true"/>
+<booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.enableFlashBreakpoints" value="false"/>
+<booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.enableSemihosting" value="false"/>
+<booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.enableSemihostingIoclientGdbClient" value="false"/>
+<booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.enableSemihostingIoclientTelnet" value="true"/>
+<booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.enableSwo" value="false"/>
+<intAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.firstResetSpeed" value="1000"/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.firstResetType" value="1"/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.gdbClientOtherCommands" value="set mem inaccessible-by-default off&#13;&#10;set arch riscv:rv32&#13;&#10;set remotetimeout 1000"/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.gdbClientOtherOptions" value=""/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.gdbServerConnection" value="usb"/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.gdbServerConnectionAddress" value=""/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.gdbServerDebugInterface" value="jtag"/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.gdbServerDeviceEndianness" value="little"/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.gdbServerDeviceName" value="N307"/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.gdbServerDeviceSpeed" value="auto"/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.gdbServerExecutable" value="${jlink_path}/${jlink_gdbserver}"/>
+<intAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.gdbServerGdbPortNumber" value="2331"/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.gdbServerLog" value=""/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.gdbServerOther" value="-singlerun -strict -timeout 0 -nogui"/>
+<intAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.gdbServerSwoPortNumber" value="2332"/>
+<intAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.gdbServerTelnetPortNumber" value="2333"/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.interfaceSpeed" value="auto"/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.otherInitCommands" value="monitor speed 100&#13;&#10;monitor halt&#13;&#10;monitor sleep 100&#13;&#10;monitor mww 0x1ff00000 0x30047073&#13;&#10;monitor mww 0x1ff00004 0xa001&#13;&#10;monitor mww 0xec001000 0x0&#13;&#10;monitor mww 0xec001004 0x0&#13;&#10;monitor mww 0xec001008 0x0&#13;&#10;monitor mww 0xec00100c 0x0&#13;&#10;monitor mww 0xec001010 0x0&#13;&#10;monitor mww 0xec001014 0x0&#13;&#10;monitor mww 0xec001018 0x0&#13;&#10;monitor mww 0xec00101c 0x0&#13;&#10;monitor mww 0xec001020 0x0&#13;&#10;monitor mww 0xec001024 0x0&#13;&#10;monitor mww 0xec001028 0x0&#13;&#10;monitor mww 0xec00102c 0x0&#13;&#10;monitor mww 0xec001030 0x0&#13;&#10;monitor mww 0xec001034 0x0&#13;&#10;monitor mww 0xec001038 0x0&#13;&#10;monitor mww 0xec00103c 0x0&#13;&#10;monitor mww 0xec001040 0x0&#13;&#10;monitor mww 0xec001044 0x0&#13;&#10;monitor mww 0xec001048 0x0&#13;&#10;monitor mww 0xec00104c 0x0&#13;&#10;monitor mww 0xec001050 0x0&#13;&#10;monitor mww 0xec001054 0x0&#13;&#10;monitor mww 0xec001058 0x0&#13;&#10;monitor mww 0xec00105c 0x0&#13;&#10;monitor mww 0xec001060 0x0&#13;&#10;monitor mww 0xec001064 0x0&#13;&#10;monitor mww 0xec001068 0x0&#13;&#10;monitor mww 0xec00106c 0x0&#13;&#10;monitor mww 0xec001070 0x0&#13;&#10;monitor mww 0xec001074 0x0&#13;&#10;monitor mww 0xec001078 0x0&#13;&#10;monitor mww 0xec00107c 0x0&#13;&#10;monitor mww 0xec001080 0x0&#13;&#10;monitor mww 0xec001084 0x0&#13;&#10;monitor mww 0xec001088 0x0&#13;&#10;monitor mww 0xec00108c 0x0&#13;&#10;monitor mww 0xec001090 0x0&#13;&#10;monitor mww 0xec001094 0x0&#13;&#10;monitor mww 0xec001098 0x0&#13;&#10;monitor mww 0xec00109c 0x0&#13;&#10;monitor mww 0xec0010a0 0x0&#13;&#10;monitor mww 0xec0010a4 0x0&#13;&#10;monitor mww 0xec0010a8 0x0&#13;&#10;monitor mww 0xec0010ac 0x0&#13;&#10;monitor mww 0xec0010b0 0x0&#13;&#10;monitor mww 0xec0010b4 0x0&#13;&#10;monitor mww 0xec0010b8 0x0&#13;&#10;monitor mww 0xec0010bc 0x0&#13;&#10;monitor reg pc 0x1ff00000&#13;&#10;monitor reset 1&#13;&#10;monitor sleep 100&#13;&#10;monitor halt&#13;&#10;monitor sleep 100&#13;&#10;monitor speed 4000"/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.otherRunCommands" value=""/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.secondResetType" value="0"/>
+<intAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.swoEnableTargetCpuFreq" value="0"/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.swoEnableTargetPortMask" value="0x1"/>
+<intAttribute key="ilg.gnumcueclipse.debug.gdbjtag.jlink.swoEnableTargetSwoFreq" value="0"/>
+<stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.svdPath" value=""/>
+<stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.imageFileName" value=""/>
+<stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.imageOffset" value=""/>
+<stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.ipAddress" value="localhost"/>
+<stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.jtagDevice" value="GNU MCU J-Link"/>
+<booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.loadImage" value="true"/>
+<booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.loadSymbols" value="true"/>
+<stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.pcRegister" value=""/>
+<intAttribute key="org.eclipse.cdt.debug.gdbjtag.core.portNumber" value="2331"/>
+<booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.setPcRegister" value="false"/>
+<booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.setResume" value="false"/>
+<booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.setStopAt" value="true"/>
+<stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.stopAt" value="main"/>
+<stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.symbolsFileName" value=""/>
+<stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.symbolsOffset" value=""/>
+<booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.useFileForImage" value="false"/>
+<booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.useFileForSymbols" value="false"/>
+<booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.useProjBinaryForImage" value="true"/>
+<booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.useProjBinaryForSymbols" value="true"/>
+<booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.useRemoteTarget" value="true"/>
+<stringAttribute key="org.eclipse.cdt.dsf.gdb.DEBUG_NAME" value="${cross_prefix}gdb${cross_suffix}"/>
+<booleanAttribute key="org.eclipse.cdt.dsf.gdb.UPDATE_THREADLIST_ON_SUSPEND" value="false"/>
+<intAttribute key="org.eclipse.cdt.launch.ATTR_BUILD_BEFORE_LAUNCH_ATTR" value="2"/>
+<stringAttribute key="org.eclipse.cdt.launch.COREFILE_PATH" value=""/>
+<stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_REGISTER_GROUPS" value=""/>
+<stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="pr_output\sample_1122.elf"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="sample_1122"/>
+<booleanAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_AUTO_ATTR" value="true"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value="ilg.gnumcueclipse.managedbuild.cross.riscv.config.elf.debug.192855339"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/sample_1122"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.ui.favoriteGroups">
+<listEntry value="org.eclipse.debug.ui.launchGroup.debug"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.dsf.launch.MEMORY_BLOCKS" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;memoryBlockExpressionList context=&quot;Context string&quot;&gt;&#13;&#10;&lt;memoryBlockExpression address=&quot;1074266112&quot; label=&quot;0x40080000&quot;/&gt;&#13;&#10;&lt;/memoryBlockExpressionList&gt;&#13;&#10;"/>
+<stringAttribute key="process_factory_id" value="org.eclipse.cdt.dsf.gdb.GdbProcessFactory"/>
+<stringAttribute key="saved_expressions&lt;seperator&gt;Unknown" value="0x1ff28048,0x1ff3ffe8,0x1ff43fe8,0x1ff43fe8\,0x1ff3c5f8 + 128*4,0x1ff3c5f8 + 128,0x1ff3c5d8,0x1ff3c5d8 +136,0x1ff3c5d8 +124,0x1ff3c5d8 +128,0x1ff3c5d8 +140,0x1ff3c5d8 +141,0x1ff3c5d8 +144,0x1ff3c5d8 +149,0x1ff3c5d8 +148"/>
+</launchConfiguration>
