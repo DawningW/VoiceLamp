@@ -8,10 +8,11 @@ extern "C" {
 // 夜灯种类
 #define LIGHT_NONE 0
 #define LIGHT_PWM 1
-#define LIGHT_IR 2
+#define LIGHT_RGB 2
+#define LIGHT_IR 3
 // 在此选择夜灯种类
-#define LIGHT_TYPE LIGHT_IR
-#if (LIGHT_TYPE != LIGHT_PWM && LIGHT_TYPE != LIGHT_IR)
+#define LIGHT_TYPE LIGHT_RGB
+#if (LIGHT_TYPE != LIGHT_PWM && LIGHT_TYPE != LIGHT_RGB && LIGHT_TYPE != LIGHT_IR)
 #error "Please choose light type first!"
 #endif
 

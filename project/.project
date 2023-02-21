@@ -221,6 +221,11 @@
 			<locationURI>PARENT-1-PROJECT_LOC/src/light_pwm.c</locationURI>
 		</link>
 		<link>
+			<name>src/light_rgb.c</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/src/light_rgb.c</locationURI>
+		</link>
+		<link>
 			<name>src/main.c</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/src/main.c</locationURI>
