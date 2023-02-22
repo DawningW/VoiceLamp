@@ -1,6 +1,10 @@
 # 智能语音小夜灯
 
-基于启英泰伦CI1122芯片开发, 目前支持红外遥控夜灯(NEC协议), 未来将支持直接使用PWM控制
+基于启英泰伦CI1122芯片开发, 目前支持PWM控制, ws2812彩灯和红外遥控夜灯(NEC协议)
+
+- PWM控制: 由于大家的电路不尽相同, 所以仅给出了PWM初始化示例, 需要自行编写点灯逻辑
+- ws2812彩灯: 已验证, 参考电路请见: [启英泰伦声控小夜灯【已验证】](https://oshwhub.com/qingchenw/qi-ying-tai-lun-sheng-kong-xiao-ye-deng)
+- 红外控制: 目前仅支持NEC协议且无自学习功能, 需要自行想办法读出遥控器的按键码, 我用的是ESP8266+Arduino+IRremoteESP8266
 
 ## 构建
 
@@ -10,13 +14,11 @@
 
 最后用官方提供的eclipse导入此仓库即可, 具体的构建和固件打包流程可参考官方教程
 
-夜灯目前分为PWM控制和红外控制两种, 可以通过light.h中的宏LIGHT_TYPE来切换
-
-如果是红外控制则目前仅支持NEC协议且无自学习功能, 需要自行想办法读出遥控器的按键码, 我用的是ESP8266+Arduino+IRremoteESP8266
+夜灯目前分为PWM控制, ws2812彩灯和红外控制三种, 可以通过light.h中的宏LIGHT_TYPE来切换
 
 ## 电路
 
-为了方便, 本项目直接使用了官方商城售卖的CI-C22GS02S模组, 你也可以自己画板子
+本项目的参考电路在[立创开源硬件平台](https://oshwhub.com/qingchenw/qi-ying-tai-lun-sheng-kong-xiao-ye-deng)开源, 你也可以自己画板子然后自行修改引脚
 
 若采用红外模式, 则红外发射管的正极接在模组的PWM3上
 
